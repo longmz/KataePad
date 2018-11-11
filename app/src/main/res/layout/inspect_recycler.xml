@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/sharp_line_vertical"
+    android:showDividers="middle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:background="@android:color/darker_gray">
+
+        <Spinner
+            android:id="@+id/inspect_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:entries="@array/list_inspect_group"
+            android:textSize="@dimen/text_medium_size" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@android:dimen/app_icon_size"
+        android:layout_marginTop="@android:dimen/app_icon_size">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/inspect_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/inspect_list_content"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:background="@android:color/white"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/back_button"
+            android:text="@string/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_medium_size" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:text="@string/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_medium_size" />
+
+        <Button
+            android:id="@+id/commit_button"
+            android:text="@string/button_save_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_medium_size" />
+    </LinearLayout>
+</FrameLayout>

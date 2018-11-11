@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_layout">
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="第一次重量" />
+
+    <EditText
+        android:id="@+id/item_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/list_text_margin"
+        android:layout_weight="2"
+        android:background="@android:color/holo_blue_bright"
+        android:ems="10"
+        android:inputType="number"
+        android:descendantFocusability="afterDescendants"
+        android:visibility="gone" />
+
+    <RadioGroup
+        android:id="@+id/inspect_check"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="3"
+        android:fadingEdge="none"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/radio_check0"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_group_green"
+            android:button="@color/transparent"
+            android:gravity="center"
+            android:text="@string/text_test_0"
+            android:textColor="@drawable/color_radiobutton" />
+
+        <RadioButton
+            android:id="@+id/radio_check1"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_group_red"
+            android:button="@color/transparent"
+            android:gravity="center"
+            android:text="@string/text_test_1"
+            android:textColor="@drawable/color_radiobutton" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/item_unit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="克" />
+
+    <LinearLayout
+        android:id="@+id/layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        <ImageView
+            android:id="@+id/img_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/preview_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp" />
+
+    <LinearLayout
+        android:id="@+id/dialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:id="@+id/btn_take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#ffff"
+            android:text="@string/text_camera_shot"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_pick_photo"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#ffff"
+            android:text="@string/text_camera_album"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_clear_photo"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#ffff"
+            android:text="@string/text_camera_delete"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffff"
+            android:text="@string/prompt_button_confirm"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#ffff"
+            android:text="@string/text_camera_cancel"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

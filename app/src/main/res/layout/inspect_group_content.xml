@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/inspect_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_weight="1"
+        android:text="奥尔良鸡腿排盖浇饭"
+        android:textSize="@dimen/text_medium_size" />
+
+    <TextView
+        android:id="@+id/inspect_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_weight="2"
+        android:text="50份"
+        android:textSize="@dimen/text_medium_size" />
+
+</LinearLayout>

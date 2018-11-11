@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">品管检查系统</string>
+    <string name="title_login">品管检查系统</string>
+    <string name="title_main">品管检查系统</string>
+    <string name="title_main_check">品管质量检查</string>
+    <string name="title_todo_task">未完成任务</string>
+    <string name="title_comp_task">已完成任务</string>
+    <string name="title_task_list">任务列表</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_account">账号</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="error_invalid_account">账号无效</string>
+    <string name="error_invalid_password">密码无效</string>
+    <string name="error_incorrect_password">密码错误</string>
+    <string name="error_field_required">必输字段</string>
+    <string name="error_network_message">网络不可用，请检查！</string>
+
+    <!-- Strings related to prompt -->
+    <string name="prompt_exit_title">退出确认</string>
+    <string name="prompt_exit_message">确定退出系统吗？</string>
+    <string name="prompt_button_confirm">确定</string>
+    <string name="prompt_button_cancel">取消</string>
+    <string name="prompt_select_check">请至少选择1条记录！</string>
+    <string name="prompt_save_title">保存确认</string>
+    <string name="prompt_save_message">确定保存吗？</string>
+    <string name="prompt_submit_title">提交确认</string>
+    <string name="prompt_submit_message">确定提交吗？</string>
+    <string name="prompt_success_refresh">刷新完成</string>
+    <string name="prompt_success_submit">提交成功！</string>
+    <string name="prompt_success_save">保存成功！</string>
+    <string name="prompt_text_title">消息文本</string>
+    <string name="prompt_release_message">确定提交吗？</string>
+    <string name="prompt_select_invalid">单据无效，请重新选择！</string>
+    <string name="prompt_oper_invalid">无效的操作：%1$d！</string>
+    <string name="prompt_search_error">没有数据，请检查检索条件！</string>
+    <string name="prompt_no_data">没有数据！</string>
+    <string name="prompt_alert_title">警告</string>
+    <string name="prompt_security_alert">请到[系统设置-->程序-->权限]中赋予[品管检查系统]读取电话信息权限！</string>
+    <string name="prompt_alert_comment">请输入备注</string>
+    <string name="prompt_sync_title">同步确认</string>
+    <string name="prompt_sync_message">确定将数据同步到本地吗？</string>
+    <string name="prompt_success_sync">数据同步到本地成功！</string>
+
+    <!-- Strings related to button -->
+    <string name="button_back">返回</string>
+    <string name="button_save">保存</string>
+    <string name="button_save_submit">保存并提交</string>
+
+    <!-- Strings related to label / description -->
+    <string name="text_status_new">未检查</string>
+    <string name="text_status_checked">已检查</string>
+
+
+    <string-array name="list_inspect_group">
+        <item>@string/inspect_group_1</item>
+        <item>@string/inspect_group_2</item>
+    </string-array>
+    <string name="inspect_group_0">-- 全部 --</string>
+    <string name="inspect_group_1">检查分组1</string>
+    <string name="inspect_group_2">检查分组2</string>
+
+    <!-- Strings related to check / description -->
+    <string name="text_test_0">合格</string>
+    <string name="text_test_1">不合格</string>
+    <string name="text_residue_0">弱阳性</string>
+    <string name="text_residue_1">强阳性</string>
+    <string name="text_residue_2">阴性</string>
+
+    <!-- Strings related to camera -->
+    <string name="text_camera_album">本地相册</string>
+    <string name="text_camera_shot">相机拍摄</string>
+    <string name="text_camera_delete">删除照片</string>
+    <string name="text_camera_cancel">取消</string>
+    <string name="title_activity_select_pic">选择图片</string>
+</resources>
